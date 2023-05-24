@@ -69,6 +69,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 });
 
 window.addEventListener('unload', async function (event) {
-    await chrome.storage.local.set({ messages: "[]", draftTitle: "" });
+    await chrome.storage.local.set({ messages: "", draftTitle: "" });
 });
   
