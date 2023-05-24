@@ -1,10 +1,10 @@
-# AifyChrome
+# Ally (Aify for Chrome)
 
 Use AI to write and edit text with OpenAI's models including GPT-4.
 
 You must have API key for OpenAI (anyone can access GPT-3.5-turbo). But then you can use any model you have access to including finetuned ones.
 
-Aify comes with plenty of stock prompts, which you can add to, delete or customize as you need.
+Ally comes with plenty of stock prompts, which you can add to, delete or customize as you need.
 
 See the original Thunderbird plugin [here](https://github.com/ali-raheem/Aify), or the Firefox plugin [here](https://github.com/ali-raheem/AifyFX).
 
@@ -22,7 +22,7 @@ See the original Thunderbird plugin [here](https://github.com/ali-raheem/Aify), 
 
 1. Open a new compose window (Write, Reply or Forward).
 2. Highlight some text to act one.
-3. Click the Aify icon in the top right (near the lightbulb) and pick an action.
+3. Click the Ally icon in the top right (near the lightbulb) and pick an action.
 4. A popup will open and await the response from the API. This may take time at periods of high load.
 5. (Optional) Click `Regenerate` to get a new response.
 
@@ -31,20 +31,6 @@ See the original Thunderbird plugin [here](https://github.com/ali-raheem/Aify), 
 You can add, edit and remove prompts from the `settings` page.
 
 `gpt-3.5-turbo` is faster and cheaper than `gpt-4`, but not as "smart".
-
-The prompt name (text box) is what is shown in the Aify context menu, and the prompt itself (the textarea) is prepended to the highlighted text separated by newline --- newline which makes it easy for the model to see whats what but isn't harmful if the prompt is empty.
-
-## Building
-
-The contents of `plugin/` should be zipped into a file ending `.xpi`.
-
-```
-cd plugin
-zip -r ../aify.xpi *
-```
-
-## Todo
-
 
 ## Privacy and Data Retention
 
