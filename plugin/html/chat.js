@@ -12,8 +12,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   loadingIcon.classList.add('rotate');
 
   var storage = await chrome.storage.local.get(["messages"]);
-  var messages = storage.messages || [{role: "system", content: chatPrompt}];  
-
+//  var messages = storage.messages || [{role: "system", content: chatPrompt}];  
+    let messages = (storage.messages?.length)? storage.messages : [{role: "system",
+								    content: chatPrompt}];
   messages.forEach(function(message) {
     displayMessage(message.role, message.content);
   });
